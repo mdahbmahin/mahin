@@ -4,7 +4,6 @@
 }
 
 /* Add a gray background color with some padding */
-
 body {
   font-family: Arial;
   padding: 0px;
@@ -23,15 +22,17 @@ body {
 
 
 
-/* Style the top navigation bar */
 
+
+
+
+/* Style the top navigation bar */
 .navbar {
   overflow: hidden;
   background-color: #333;
 }
 
 /* Style the navigation bar links */
-
 .navbar a {
   float: left;
   display: block;
@@ -42,7 +43,6 @@ body {
 }
 
 /* Right-aligned link */
-
 .navbar a.right {
   float: right;
 }
@@ -64,8 +64,16 @@ body {
 
 
 
+/* Right column */
+.maincolumn {
 
+  float: center;
+  width: 100%;
+  padding-left: 5px;
+ 
+}
 
+/* Fake image */
 .imgecontainer {
   
   height: 300px;
@@ -76,6 +84,27 @@ body {
   margin-right: auto;
   
 }
+
+.aboutmaintext{
+  text-align: center;
+}
+
+
+
+.contactmaintext{
+  text-align: left;
+}
+
+
+
+
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 0px;
+
+}
+
 
 
 /* Clear floats after the columns */
@@ -92,7 +121,13 @@ body {
 
 
 /* Footer */
-
+.footer {
+  padding: 15px;
+  text-align: center;
+  background: #54504e;
+  color: white;
+  margin-top: 0px;
+}
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
