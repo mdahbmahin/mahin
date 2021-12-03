@@ -1,0 +1,103 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+
+body {
+  font-family: Arial;
+  padding: 0px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  font-size: 10px;
+  text-align: center;
+  color: white;
+  background: #54504e;
+}
+
+
+
+
+/* Style the top navigation bar */
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.navbar a.active {
+  background-color: #54504e;
+  color: white;
+}
+
+
+
+
+
+
+
+
+.imgecontainer {
+  
+  height: 300px;
+  width: 300px; 
+  border-radius: 100%;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+/* Clear floats after the columns */
+.main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+/* Footer */
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
