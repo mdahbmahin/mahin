@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Recorder</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+
+<div class="header">
+  <h2>Md. Ahb Mahin</h2>
+</div>
+
+
+
+
+
+<div class="navbar">
+
+  <a href="index.html">Go To Home Page</a>
+  <a href="" class="active">Data Recorder</a>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <form method="post" autocomplete="off" name="google-sheet">
+    <center><br>
+         
+         <table border="2"> 
+            
+
+
+
+
+<h1>Information Recorder</h1>
+
+
+<br>
+
+
+
+            <tr>
+                <td><b>Gender : </b></td>
+                <td><input type="radio"  name="Gender" value="male" >male
+                    <input type="radio"  name="Gender" value="female"  >female<br/></td>
+             </tr>
+           
+
+
+
+
+
+            <tr>
+
+             <td><b>Holder Name : </b></td>
+
+             <td><input type="text" name="Name"  /></td>
+
+
+            
+             
+            </tr>
+
+
+
+
+            <tr>
+
+            <td><b>First Phone Number : </b></td>
+             <td><input type="text" name="PhoneOne"  /></td>
+
+             <td><b>Second Phone Number : </b></td>
+             <td><input type="text" name="PhoneTwo"/></td>
+
+            </tr>
+
+
+           
+
+
+
+
+            <tr>
+            </tr>
+
+
+            <tr>
+
+             <td><b>First Email : </b></td>
+             <td><input type="text" name="EmailOne"    /></td>
+
+
+             <td><b>Second Email : </b></td>
+             <td><input type="text" name="EmailTwo" /></td>
+
+
+            </tr>
+
+
+
+
+            <tr>
+            </tr>
+
+
+
+            <tr>
+
+             <td><b>User Name : </b></td>
+             <td><input type="text" name="UserName" /></td>
+
+             <td><b>User Password : </b></td>
+             <td><input type="text" name="UserPassword" /></td>
+
+            </tr>
+
+
+
+            <tr>
+            </tr>
+
+
+
+
+            <tr>
+
+             <td><b>Nid Number : </b></td>
+             <td><input type="text" name="Nidnumber" /></td>
+
+             <td><b>Zone Name : </b></td>
+             <td><input type="text" name="Zone" /></td>
+
+            </tr>
+
+
+
+
+            <tr>
+            </tr>
+
+
+
+            <tr>
+
+             <td><b>Division Name : </b></td>
+             <td><input type="text" name="Division" /></td>
+
+             <td><b>District Name : </b></td>
+             <td><input type="text" name="District" /></td>
+
+            </tr>
+
+ 
+            <tr>
+             
+            </tr>
+
+
+
+
+            <tr>
+
+             <td><b>Subdistrict Name : </b></td>
+             <td><input type="text" name="Subdistrict" /></td>
+
+             <td><b>Thana Name : </b></td>
+             <td><input type="text"name="Thana" /></td>
+
+            </tr>
+
+
+
+
+            <tr>
+            </tr>
+
+
+
+            <tr>
+
+             <td><b>Postoffice Name : </b></td>
+             <td><input type="text" name="Postoffice" /></td>
+
+             <td><b>Union Name : </b></td>
+             <td><input type="text" name="Union" /></td>
+
+            </tr>
+                
+
+
+            <tr>
+            </tr> 
+
+
+
+
+             <tr>
+
+             <td><b>Village Name : </b></td>
+             <td><input type="text" name="Village" /></td>
+
+             <td><b>Word no : </b></td>
+             <td><input type="text" name="Word" /></td>
+
+            </tr>   
+
+
+
+            <tr>
+            </tr> 
+
+
+
+            <tr>
+
+             <td><b>Others Data One : </b></td>
+             <td><input type="text" name="Othersdataone" /></td>
+
+             <td><b>Others Data Two : </b></td>
+             <td><input type="text" name="Othersdatatwo" /></td>
+
+
+            </tr>
+
+
+
+
+            <tr>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         </table>
+         <br><br>
+         <input type="submit" name="submit" value="Record data"     
+                style="float: center;
+                 padding-top: 3px;
+                 padding-bottom: 3px;
+                 padding-left: 15px;
+                 padding-right: 20px;
+                 font-size: 1.2em;
+                 font-weight:bold;" />
+    </center>
+  </form>
+
+  <script type="text/javascript">
+
+
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyM6Thq8BIp6vWbD3qynZ6Na18QvS6WytFY4c6_kznEzWqE99JOTd6Msg-Wwe4FDWYf-g/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Successfully Recorded."))
+                .catch(error => console.error('Error!', error.message))
+            })
+  </script>
+
+<br><br><br>
+
+<div class="footer">
+  <p>Copyright @ 2019 - Md. Ahb Mahin</p>
+</div>
+
+
+
+
+</body>
+</html>
