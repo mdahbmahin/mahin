@@ -238,12 +238,11 @@ table, th, td {
   <script type="text/javascript">
     
 	
-	
+    var completed_credit = 10;
     var required_credit = 200000;
-    var completed_credit = 500;
     var due_credit= required_credit-completed_credit;
 	
-	var required_progress = 100;
+    var required_progress = 100;
     var completed_progress = 10;
     var due_progress= required_progress-completed_progress;
   
@@ -252,7 +251,7 @@ table, th, td {
     document.getElementById("data3").innerHTML = due_credit;
     document.getElementById("data4").innerHTML = completed_credit;
     document.getElementById("data5").innerHTML = completed_credit;
-	document.getElementById("data6").innerHTML = required_progress;
+    document.getElementById("data6").innerHTML = required_progress;
     document.getElementById("data7").innerHTML = completed_progress;
     document.getElementById("data8").innerHTML = due_progress;
     document.getElementById("data9").innerHTML = completed_progress;
